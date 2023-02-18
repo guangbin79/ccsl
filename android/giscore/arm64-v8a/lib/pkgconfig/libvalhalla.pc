@@ -1,0 +1,10 @@
+prefix=/home/guangbin/android/giscore/arm64-v8a
+exec_prefix=/home/guangbin/android/giscore/arm64-v8a
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libvalhalla
+Description: valhalla c++ library
+Version: 3.2.1
+Libs: -L${libdir} -lvalhalla  -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined  -Wl,--gc-sections  -s -L/home/guangbin/android/giscore/arm64-v8a/lib -llog    -L/home/guangbin/android/giscore/arm64-v8a/lib  -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.7/lib/linux/aarch64  -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/21  -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android  -L/opt/android-ndk/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib  /home/guangbin/android/giscore/arm64-v8a/lib/libprotobuf-lite.a /home/guangbin/android/giscore/arm64-v8a/lib/libz.a -lczmq -lzmq -lcurl -lssl -lcrypto -llz4 -ldl -pthread -llog -latomic -lm -lc++ -lm -l:libunwind.a -ldl -lc -l:libunwind.a -ldl -llog -latomic -lm -l:libunwind.a -ldl -lc -l:libunwind.a -ldl
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+# Package Information for pkg-config
+
+prefix=/home/guangbin/android/giscore/armeabi-v7a-19
+exec_prefix=${prefix}
+libdir=/home/guangbin/android/giscore/armeabi-v7a-19/lib
+includedir=${prefix}/include
+
+Name: spatialite
+Description: Spatial SQL database engine based on SQLite
+Version: 5.0.1
+Libs: -L${libdir} -lspatialite -lfreexl -liconv -lz  -L/home/guangbin/android/giscore/armeabi-v7a-19/lib -lgeos_c -L/home/guangbin/android/giscore/armeabi-v7a-19/lib -lxml2 -lm
+Cflags: -I${includedir}

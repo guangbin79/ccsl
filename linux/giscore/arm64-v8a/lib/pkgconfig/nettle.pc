@@ -1,0 +1,11 @@
+prefix=/home/guangbin/linux/giscore/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/guangbin/linux/giscore/arm64-v8a/lib
+includedir=${prefix}/include
+
+Name: Nettle
+Description: Nettle low-level cryptographic library (symmetric algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 3.7.3
+Libs: -L${libdir} -lnettle
+Cflags: -I${includedir}

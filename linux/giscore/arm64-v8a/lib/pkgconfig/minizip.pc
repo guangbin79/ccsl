@@ -1,0 +1,12 @@
+prefix=/home/guangbin/linux/giscore/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/guangbin/linux/giscore/arm64-v8a/lib
+includedir=${prefix}/include/minizip
+
+Name: minizip
+Description: Minizip zip file manipulation library
+Requires:
+Version: 1.2.11
+Libs: -L${libdir} -lminizip
+Libs.private: -lz
+Cflags: -I${includedir}

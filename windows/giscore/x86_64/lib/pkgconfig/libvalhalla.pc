@@ -1,0 +1,10 @@
+prefix=/home/guangbin/windows/giscore/x86_64
+exec_prefix=/home/guangbin/windows/giscore/x86_64
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libvalhalla
+Description: valhalla c++ library
+Version: 3.2.1
+Libs: -L${libdir} -lvalhalla  -s -L/home/guangbin/windows/giscore/x86_64/lib -Bstatic -static-libgcc -static-libstdc++ -lpthread -lws2_32 -lgdi32 -lcrypt32 -lwldap32 -lwsock32    -L/home/guangbin/windows/giscore/x86_64/lib  -L/usr/lib/gcc/x86_64-w64-mingw32/7.3-posix  -L/usr/x86_64-w64-mingw32/lib  /home/guangbin/windows/giscore/x86_64/lib/libprotobuf-lite.a /home/guangbin/windows/giscore/x86_64/lib/libz.a -lczmq -lzmq -lcurl -lssl -lcrypto -llz4 -ldl -lws2_32 -lpthread -lws2_32 -lgdi32 -lcrypt32 -lwldap32 -lwsock32 -lpthread -lws2_32 -lgdi32 -lcrypt32 -lwldap32 -lwsock32 /usr/lib/gcc/x86_64-w64-mingw32/7.3-posix/libstdc++.a -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr120 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr120 -lpthread -lws2_32 -lgdi32 -lcrypt32 -lwldap32 -lwsock32 -lpthread -lws2_32 -lgdi32 -lcrypt32 -lwldap32 -lwsock32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr120 -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcr120
+Cflags: -I${includedir}

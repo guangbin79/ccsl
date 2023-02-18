@@ -1,0 +1,13 @@
+prefix=/home/guangbin/android/giscore/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/guangbin/android/giscore/armeabi-v7a/lib
+includedir=${prefix}/include
+modules=1
+
+Name: libXML
+Version: 2.9.14
+Description: libXML library version2.
+Requires:
+Libs: -L${libdir} -lxml2
+Libs.private:   -L/home/guangbin/android/giscore/armeabi-v7a/lib/lib -lz  -L/home/guangbin/android/giscore/armeabi-v7a/lib/lib -liconv -lm  
+Cflags: -I${includedir}/libxml2 -I/home/guangbin/android/giscore/armeabi-v7a/lib/include 

@@ -1,0 +1,11 @@
+prefix=/home/guangbin/android/giscore/armeabi-v7a-19
+exec_prefix=${prefix}
+libdir=/home/guangbin/android/giscore/armeabi-v7a-19/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.3.0
+Libs: -L${libdir} -ltiff
+Libs.private: -lz -lm 
+Cflags: -I${includedir}

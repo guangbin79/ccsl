@@ -1,0 +1,11 @@
+prefix=/home/guangbin/android/giscore/armeabi-v7a-19
+exec_prefix=${prefix}
+libdir=/home/guangbin/android/giscore/armeabi-v7a-19/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.0.3
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}

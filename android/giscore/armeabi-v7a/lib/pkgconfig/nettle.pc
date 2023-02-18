@@ -1,0 +1,11 @@
+prefix=/home/guangbin/android/giscore/armeabi-v7a
+exec_prefix=${prefix}
+libdir=/home/guangbin/android/giscore/armeabi-v7a/lib
+includedir=${prefix}/include
+
+Name: Nettle
+Description: Nettle low-level cryptographic library (symmetric algorithms)
+URL: http://www.lysator.liu.se/~nisse/nettle
+Version: 3.7.3
+Libs: -L${libdir} -lnettle
+Cflags: -I${includedir}

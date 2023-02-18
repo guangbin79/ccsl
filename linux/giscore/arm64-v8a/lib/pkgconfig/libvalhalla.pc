@@ -1,0 +1,10 @@
+prefix=/home/guangbin/linux/giscore/arm64-v8a
+exec_prefix=/home/guangbin/linux/giscore/arm64-v8a
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libvalhalla
+Description: valhalla c++ library
+Version: 3.2.1
+Libs: -L${libdir} -lvalhalla  -s -L/home/guangbin/linux/giscore/arm64-v8a/lib    -L/home/guangbin/linux/giscore/arm64-v8a/lib  -L/usr/lib/gcc-cross/aarch64-linux-gnu/7  -L/usr/aarch64-linux-gnu/lib  /home/guangbin/linux/giscore/arm64-v8a/lib/libprotobuf-lite.a /home/guangbin/linux/giscore/arm64-v8a/lib/libz.a -lczmq -lzmq -lcurl -lssl -lcrypto -llz4 -ldl -pthread -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc -lgcc -lgcc_s -lc -lgcc -lgcc_s
+Cflags: -I${includedir}
