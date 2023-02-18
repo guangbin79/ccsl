@@ -1,0 +1,11 @@
+prefix=/home/guangbin/linux/giscore/x86_64
+exec_prefix=${prefix}
+libdir=/home/guangbin/linux/giscore/x86_64/lib
+includedir=${prefix}/include
+
+Name: libtiff
+Description:  Tag Image File Format (TIFF) library.
+Version: 4.3.0
+Libs: -L${libdir} -ltiff
+Libs.private: -lz -lm 
+Cflags: -I${includedir}

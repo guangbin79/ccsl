@@ -1,0 +1,13 @@
+prefix=/home/guangbin/wasm/giscore/i686
+exec_prefix=${prefix}
+libdir=/home/guangbin/wasm/giscore/i686/lib
+includedir=${prefix}/include
+
+Name: Protocol Buffers
+Description: Google's Data Interchange Format
+Version: 3.12.4
+Libs: -L${libdir} -lprotobuf 
+Libs.private: -lz 
+
+Cflags: -I${includedir} -pthread
+Conflicts: protobuf-lite

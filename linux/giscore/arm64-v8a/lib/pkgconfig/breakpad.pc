@@ -1,0 +1,10 @@
+prefix=/home/guangbin/linux/giscore/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/guangbin/linux/giscore/arm64-v8a/lib
+includedir=${prefix}/include/breakpad
+
+Name: google-breakpad
+Description: An open-source multi-platform crash reporting system
+Version: 0.1
+Libs: -L${libdir} -lbreakpad 
+Cflags: -I${includedir} -pthread

@@ -1,0 +1,14 @@
+prefix=/home/guangbin/linux/giscore/arm64-v8a
+exec_prefix=${prefix}
+libdir=/home/guangbin/linux/giscore/arm64-v8a/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}/proj
+
+Name: PROJ
+Description: Coordinate transformation software library
+Requires:
+Version: 8.2.1
+Libs: -L${libdir} -lproj
+Libs.private: -lstdc++ -lsqlite3 -lpthread -ltiff -lcurl -lm -ldl
+Cflags: -I${includedir}
